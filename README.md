@@ -75,6 +75,8 @@ This analysis not only measures visitor volume but also conversion rates, which 
 
 In this project, I explored three key datasets: website sessions, pageviews, and orders, examining how they interact to provide insights into user behavior and campaign performance. With this foundation, I **used SQL queries and visualization tools to analyze traffic sources and conversion efficiency**, enabling data-driven marketing decisions.
 
+The full SQL query used to sales trend analysis is available [here](https://github.com/SethSterlin/Sales-Trend-Analysis-Project-Maven-Fuzzy-Factory/blob/main/Sales%20Trend%20Analysis%20Project%20%20%E2%80%93%20Maven%20Fuzzy%20Factory.sql)  
+
 ### STEP 1 : Finding Top Traffic Source
 
 In this step, I analyzed web session data from the early launch phase of an e-commerce startup to help the marketing team answer a key business question:
