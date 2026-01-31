@@ -27,6 +27,14 @@ Using SQL and visualization tools, I analyzed traffic sources, conversion rates,
 
 [Maven Fuzzy Factory](https://github.com/SethSterlin/A-B-Landing-Page-Test-Maven-Fuzzy-Factory/blob/main/Calculate%20Bounce%20Rate.sql)  
 
+This ERD consists of six tables: `website_sessions`, `website_pageviews`, `orders, order_items`, products, and `order_item_refunds`, representing the full e-commerce funnel from traffic to refunds.
+The dataset contains a total of 472,871 records across all tables.
+
+
+![ERD Schema](https://github.com/SethSterlin/A-B-Landing-Page-Test-Maven-Fuzzy-Factory/blob/main/Maven%20ERD.png?raw=true)
+
+Prior to beginning the analysis, a variety of quality control checks were performed to become familiar with the dataset. SQL was used during this stage to validate data integrity, identify missing or inconsistent values, and quickly explore large tables through aggregation and filtering.
+
 ---
 
 ## Sales & Traffic Source Analysis – From Acquisition to Conversion
