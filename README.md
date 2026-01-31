@@ -32,17 +32,42 @@ This project demonstrates how data can be used not just to report metrics, but t
 
 ---
 
-## Dataset Used
+## Data Structure and Key Concepts
+### Dataset used
 
 [Maven Fuzzy Factory](https://github.com/SethSterlin/A-B-Landing-Page-Test-Maven-Fuzzy-Factory/blob/main/Calculate%20Bounce%20Rate.sql)  
 
 This ERD consists of six tables: `website_sessions`, `website_pageviews`, `orders, order_items`, products, and `order_item_refunds`, representing the full e-commerce funnel from traffic to refunds.
 The dataset contains a total of 472,871 records across all tables.
 
-
 ![ERD Schema](https://github.com/SethSterlin/A-B-Landing-Page-Test-Maven-Fuzzy-Factory/blob/main/Maven%20ERD.png?raw=true)
 
 Prior to beginning the analysis, a variety of quality control checks were performed to become familiar with the dataset. SQL was used during this stage to validate data integrity, identify missing or inconsistent values, and quickly explore large tables through aggregation and filtering.
+
+### Understanding UTM Parameters (Traffic Source Tracking)
+
+![enter image description here](https://github.com/SethSterlin/Sales-Trend-Analysis-Project-Maven-Fuzzy-Factory/blob/main/utm%20source.png)
+
+This diagram illustrates how **UTM parameters** embedded in a URL are used to track the origin of website traffic and store it in a structured database format for analysis.
+
+When a user visits the website through a URL such as:
+
+www.abcwebsite.com?utm_source=gsearch&utm_campaign=nonbrand
+
+the UTM parameters provide critical marketing context:
+
+- **utm_source** identifies the traffic source (e.g., Google Search, Bing Search).
+- **utm_campaign** identifies the campaign type (e.g., brand, nonbrand).
+
+These parameters are captured at the session level and stored in database columns such as `utm_source` and `utm_campaign`.  
+As shown in the table, each website session can be classified based on its acquisition channel, enabling clear separation between paid search, branded traffic, and other channels.
+
+This tracking mechanism is fundamental for **traffic source analysis**, as it allows analysts to:
+- Attribute sessions and orders to specific marketing campaigns
+- Measure conversion rates by channel and campaign
+- Optimize bidding strategies and marketing spend based on performance
+
+By linking UTM-tagged sessions with downstream order data, businesses can make data-driven decisions to improve marketing efficiency and ROI.
 
 ---
 
