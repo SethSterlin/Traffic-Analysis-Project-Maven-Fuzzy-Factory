@@ -1,6 +1,6 @@
 ![enter image description here](https://github.com/SethSterlin/Sales-Trend-Analysis-Project-Maven-Fuzzy-Factory/blob/main/1728341011079.jpg)
 
-# Sales Trend Analysis Project – Maven Fuzzy Factory
+# Traffic Analysis Project – Maven Fuzzy Factory
 
 ## Project Background
 
